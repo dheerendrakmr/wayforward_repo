@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Calculator";
+</script>
+<form id="calc">
+<table>
+<tr>
+<td>
+<input type="text" id="display"/>
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="button" id="7" value="7" onClick="calc.display.value+='7'"/>
+<input type="button" id="8" value="8" onClick="calc.display.value+='8'"/>
+<input type="button" id="9" value="9" onClick="calc.display.value+='9'"/>
+<input type="button" id="divition" value="/" onClick="calc.display.value+='/'"/>
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="button" id="4" value="4" onClick="calc.display.value+='4'"/>
+<input type="button" id="5" value="5" onClick="calc.display.value+='5'"/>
+<input type="button" id="6" value="6" onClick="calc.display.value+='6'"/>
+<input type="button" id="multiply" value="*" onClick="calc.display.value+='*'"/>
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="button" id="1" value="1" onClick="calc.display.value+='1'"/>
+<input type="button" id="2" value="2" onClick="calc.display.value+='2'"/>
+<input type="button" id="3" value="3" onClick="calc.display.value+='3'"/>
+<input type="button" id="plus" value="+" onClick="calc.display.value+='+'"/>
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="button" id="0" value="0" onClick="calc.display.value+='0'"/>
+<input type="button" id="=" value="=" onClick="calc.display.value=eval(calc.display.value)"/>
+<input type="button" id="minus" value="-" onClick="calc.display.value+='-'"/>
+<input type="button" id="clear" value="AC" onClick="calc.display.value=''"/>
+</td>
+</tr>
+
+</form>
+
+</body>
+</html> 
